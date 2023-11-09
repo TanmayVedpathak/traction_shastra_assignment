@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <h1 class="navbar_logo">Logo</h1>
+        <ul id="navbar_list" class="navbar_list navbar_list_top">
+          <li class="navbar_item">
+            <a class="navbar_link" href="/index.html">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link" href="#">About Us</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link" href="/service.html">Services</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link" href="#">Our Work</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link active_page" href="/contact.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <img
+          id="menu_icon"
+          class="menu_icon"
+          src="./images/menu.svg"
+          alt="menu"
+        />
+      </div>
+    </nav>
+
+    <main>
+      <div class="contact_section">
+        <form id="reviewForm">
+          <div class="reviewFormInputDiv">
+            <label for="name" class="reviewFormLabel">
+              Name:
+              <img src="./images/asterisk.svg" alt="asterisk" /> </label
+            ><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+              class="reviewFormInput"
+            />
+          </div>
+          <div class="reviewFormInputDiv">
+            <label for="email" class="reviewFormLabel"
+              >Email:<img src="./images/asterisk.svg" alt="asterisk" /></label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              class="reviewFormInput"
+            />
+          </div>
+
+          <div class="reviewFormInputDiv">
+            <label for="phone" class="reviewFormLabel">Phone:</label><br />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter your Phone number"
+              required
+              class="reviewFormInput"
+            />
+          </div>
+
+          <div class="reviewFormInputDiv">
+            <label for="order" class="reviewFormLabel">Order Number:</label
+            ><br />
+            <input
+              type="text"
+              id="order"
+              name="order"
+              placeholder="Enter your Order number"
+              required
+              class="reviewFormInput"
+            />
+          </div>
+
+          <div class="reviewFormInputDiv">
+            <label for="message" class="reviewFormLabel"
+              >Your Message:<img
+                src="./images/asterisk.svg"
+                alt="asterisk" /></label
+            ><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Please enter your message here"
+              required
+              class="reviewFormInput"
+            ></textarea>
+          </div>
+
+          <i>Please provide all the information about your issue you can.</i>
+
+          <div class="reviewFormInputDiv">
+            <label for="spam" class="reviewFormLabel"
+              >SPAM PROTECTION:<img
+                src="./images/asterisk.svg"
+                alt="asterisk" /></label
+            ><br />
+            <input
+              type="text"
+              id="spam"
+              name="spam"
+              required
+              class="reviewFormInput"
+            />
+          </div>
+
+          <div class="reviewSubmitDiv">
+            <button type="submit" class="reviewSubmitBtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_about">
+          <h3 class="footer_title">About</h3>
+          <p>
+            This is a test website made by Tanmay Vedpathak from Mumbai. I have
+            a strong HTML, CSS, JavaScript, and ReactJS skill set. Leveraging my
+            experience to deliver clean and responsive code. I am excited to
+            contribute my skills and grow professionally within a dynamic team.
+          </p>
+        </div>
+        <div class="footer_services">
+          <h3 class="footer_title">SERVICES</h3>
+          <ul>
+            <li class="footer_item">Website Development</li>
+            <li class="footer_item">Web Application Development</li>
+            <li class="footer_item">Social Media Management</li>
+            <li class="footer_item">Branding Solutions</li>
+            <li class="footer_item">Cloud Storage Solution</li>
+          </ul>
+        </div>
+        <div class="footer_links">
+          <h3 class="footer_title">QUICK LINKS</h3>
+          <ul>
+            <li class="footer_item">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer_item">
+              <a href="/contact.html">Contact Us</a>
+            </li>
+            <li class="footer_item">
+              <a href="/service.html">Services</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_social">
+        <p id="copyright_text">Copyright &copy;</p>
+        <div>
+          <img class="social_icon" src="./images/facebook.png" alt="facebook" />
+          <img class="social_icon" src="./images/twitter.png" alt="twitter" />
+          <img class="social_icon" src="./images/dribbble.png" alt="dribble" />
+          <img class="social_icon" src="./images/linkedin.png" alt="linkedin" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>

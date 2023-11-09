@@ -1,0 +1,171 @@
+.service_section {
+    color: var(--text-color-1);
+    padding: 40px;
+    margin: 25px 0px;
+}
+
+.pricing_container {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.pricing_card {
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+
+.pricing_type {
+    text-align: center;
+    color: var(--additional-color-1);
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.pricing_rate {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.pricing_rate p {
+    align-self: end;
+}
+
+.pricing_card_main {
+    margin-top: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.extra {
+    font-weight: var(--font-bold);
+}
+
+.feature.denied {
+    font-weight: var(--font-bold);
+    color: var(--additional-color-2);
+}
+
+.pricing_btn {
+    width: 100%;
+    background-color: #7f79fc;
+    border: none;
+    border-radius: 20px;
+    font-size: var(--h4-font-size);
+    padding: 15px 0;
+}
+
+.pricing_card:hover {
+    transform: translateY(-20PX);
+}
+
+.pricing_card:hover .pricing_btn {
+    background-color: var(--bg-color);
+}
+
+@media screen and (max-width: 1000px) {
+    .pricing_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pricing_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* services */
+.services_container {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+}
+
+.service_slide {
+    /* width: 70px; */
+    height: 400px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.active_slide {
+    grid-column: span 8
+}
+
+.webDev {
+    background-image: url("../images/webDev.png");
+}
+
+.webAppDev {
+    background-image: url("../images/webAppDev.png");
+}
+
+.socialMedia {
+    background-image: url("../images/socialMedia.png");
+}
+
+.branding {
+    background-image: url("../images/brand.png");
+}
+
+.cloudStorage {
+    background-image: url("../images/cloud.png");
+}
+
+.slide_info {
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 8px;
+}
+
+.slide_icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.slide_icon img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .slide_info {
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .services_container {
+        display: block;
+    }
+
+    .service_slide {
+        margin: 25px 0;
+    }
+}

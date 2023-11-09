@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <h1 class="navbar_logo">Logo</h1>
+        <ul id="navbar_list" class="navbar_list navbar_list_top">
+          <li class="navbar_item">
+            <a class="navbar_link active_page" href="/index.html">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link" href="#">About Us</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link" href="/service.html">Services</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link" href="#">Our Work</a>
+          </li>
+          <li class="navbar_item">
+            <a class="navbar_link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <img
+          id="menu_icon"
+          class="menu_icon"
+          src="./images/menu.svg"
+          alt="menu"
+        />
+      </div>
+    </nav>
+
+    <main>
+      <div class="section">
+        <h3 class="section_title">Slider</h3>
+        <div class="slider">
+          <div class="slide active">
+            <img src="./images/slide-1.jpg" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="./images/slide-2.jpg" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="./images/slide-3.jpg" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="./images/slide-4.jpg" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="./images/slide-1.jpg" alt="Image 4" />
+          </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">
+          <img src="./images/leftArrow.svg" alt="" />
+        </button>
+        <button class="next" onclick="nextSlide()">
+          <img src="./images/rightArrow.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="section">
+        <h3 class="section_title">Members</h3>
+        <div class="cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="banner">
+                  <img src="./images/banner.jpg" alt="" />
+                </div>
+                <div class="profile">
+                  <img
+                    src="./images/profile_pic_1.png"
+                    alt="Avatar"
+                    style="width: 80px; height: 80px"
+                  />
+                </div>
+                <div class="person_info">
+                  <h2 class="person_name">John Deo</h2>
+                  <h4 class="person_position">CEO</h4>
+                  <p class="person-review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    tenetur necessitatibus aspernatur expedita atque quod?
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, nobis.
+                </p>
+                <hr />
+                <h3>Job Description</h3>
+                <p class="job-desc">
+                  Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                  others...
+                </p>
+                <div class="figures">
+                  <div class="follower">
+                    <h4 class="number">888</h4>
+                    <span>Followers</span>
+                  </div>
+                  <div class="following">
+                    <h4 class="number">777</h4>
+                    <span>Following</span>
+                  </div>
+                  <div class="projects">
+                    <h4 class="number">666</h4>
+                    <span>Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="banner">
+                  <img src="./images/banner.jpg" alt="" />
+                </div>
+                <div class="profile">
+                  <img
+                    src="./images/profile_pic_2.png"
+                    alt="Avatar"
+                    style="width: 80px; height: 80px"
+                  />
+                </div>
+                <div class="person_info">
+                  <h2 class="person_name">Inna Corman</h2>
+                  <h4 class="person_position">Manager</h4>
+                  <p class="person-review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    tenetur necessitatibus aspernatur expedita atque quod?
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, nobis.
+                </p>
+                <hr />
+                <h3>Job Description</h3>
+                <p class="job-desc">
+                  Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                  others...
+                </p>
+                <div class="figures">
+                  <div class="follower">
+                    <h4 class="number">888</h4>
+                    <span>Followers</span>
+                  </div>
+                  <div class="following">
+                    <h4 class="number">777</h4>
+                    <span>Following</span>
+                  </div>
+                  <div class="projects">
+                    <h4 class="number">666</h4>
+                    <span>Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="banner">
+                  <img src="./images/banner.jpg" alt="" />
+                </div>
+                <div class="profile">
+                  <img
+                    src="./images/profile_pic_3.png"
+                    alt="Avatar"
+                    style="width: 80px; height: 80px"
+                  />
+                </div>
+                <div class="person_info">
+                  <h2 class="person_name">John Deo</h2>
+                  <h4 class="person_position">Senior Developer</h4>
+                  <p class="person-review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    tenetur necessitatibus aspernatur expedita atque quod?
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, nobis.
+                </p>
+                <hr />
+                <h3>Job Description</h3>
+                <p class="job-desc">
+                  Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                  others...
+                </p>
+                <div class="figures">
+                  <div class="follower">
+                    <h4 class="number">888</h4>
+                    <span>Followers</span>
+                  </div>
+                  <div class="following">
+                    <h4 class="number">777</h4>
+                    <span>Following</span>
+                  </div>
+                  <div class="projects">
+                    <h4 class="number">666</h4>
+                    <span>Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="banner">
+                  <img src="./images/banner.jpg" alt="" />
+                </div>
+                <div class="profile">
+                  <img
+                    src="./images/profile_pic_4.png"
+                    alt="Avatar"
+                    style="width: 80px; height: 80px"
+                  />
+                </div>
+                <div class="person_info">
+                  <h2 class="person_name">John Deo</h2>
+                  <h4 class="person_position">Junior Developer</h4>
+                  <p class="person-review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    tenetur necessitatibus aspernatur expedita atque quod?
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, nobis.
+                </p>
+                <hr />
+                <h3>Job Description</h3>
+                <p class="job-desc">
+                  Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                  others...
+                </p>
+                <div class="figures">
+                  <div class="follower">
+                    <h4 class="number">888</h4>
+                    <span>Followers</span>
+                  </div>
+                  <div class="following">
+                    <h4 class="number">777</h4>
+                    <span>Following</span>
+                  </div>
+                  <div class="projects">
+                    <h4 class="number">666</h4>
+                    <span>Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="banner">
+                  <img src="./images/banner.jpg" alt="" />
+                </div>
+                <div class="profile">
+                  <img
+                    src="./images/profile_pic_5.png"
+                    alt="Avatar"
+                    style="width: 80px; height: 80px"
+                  />
+                </div>
+                <div class="person_info">
+                  <h2 class="person_name">John Deo</h2>
+                  <hJunior class="person_position"></hJunior Developer4>
+                  <p class="person-review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                    tenetur necessitatibus aspernatur expedita atque quod?
+                  </p>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempore, nobis.
+                </p>
+                <hr />
+                <h3>Job Description</h3>
+                <p class="job-desc">
+                  Web design, Adobe Photoshop, HTML5, CSS3, Corel and many
+                  others...
+                </p>
+                <div class="figures">
+                  <div class="follower">
+                    <h4 class="number">888</h4>
+                    <span>Followers</span>
+                  </div>
+                  <div class="following">
+                    <h4 class="number">777</h4>
+                    <span>Following</span>
+                  </div>
+                  <div class="projects">
+                    <h4 class="number">666</h4>
+                    <span>Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="section">
+        <h3 class="section_title">API</h3>
+        <div class="api_container">
+          <img id="api_image" src="" alt="api_image">
+        </div>
+        <div class="api_container">
+          <video id="api_video" width="320" height="240" controls>
+            <source  src="" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_about">
+          <h3 class="footer_title">About</h3>
+          <p>
+            This is a test website made by Tanmay Vedpathak from Mumbai. I have
+            a strong HTML, CSS, JavaScript, and ReactJS skill set. Leveraging my
+            experience to deliver clean and responsive code. I am excited to
+            contribute my skills and grow professionally within a dynamic team.
+          </p>
+        </div>
+        <div class="footer_services">
+          <h3 class="footer_title">SERVICES</h3>
+          <ul>
+            <li class="footer_item">Website Development</li>
+            <li class="footer_item">Web Application Development</li>
+            <li class="footer_item">Social Media Management</li>
+            <li class="footer_item">Branding Solutions</li>
+            <li class="footer_item">Cloud Storage Solution</li>
+          </ul>
+        </div>
+        <div class="footer_links">
+          <h3 class="footer_title">QUICK LINKS</h3>
+          <ul>
+            <li class="footer_item">
+              <a href="#">About Us</a>
+            </li>
+            <li class="footer_item">
+              <a href="/contact.html">Contact Us</a>
+            </li>
+            <li class="footer_item">
+              <a href="/service.html">Services</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="footer_item">
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_social">
+        <p id="copyright_text">Copyright &copy;</p>
+        <div>
+          <img class="social_icon" src="./images/facebook.png" alt="facebook" />
+          <img class="social_icon" src="./images/twitter.png" alt="twitter" />
+          <img class="social_icon" src="./images/dribbble.png" alt="dribble" />
+          <img class="social_icon" src="./images/linkedin.png" alt="linkedin" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 50%;
+    color: #000000;
+    cursor: pointer;
+}
+
+.prev {
+    left: 70px;
+}
+
+.next {
+    right: 70px;
+}
+
+/* flip card */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 15px 0px 30px 0px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    backface-visibility: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.profile {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: blueviolet;
+    outline: 3px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.person_info {
+    margin-top: 75px;
+}
+
+.person_info h2 {
+    color: var(--text-color-2);
+}
+
+.person-review {
+    padding: 0 10px;
+    color: white;
+}
+
+.person_position {
+    color: var(--additional-color-1);
+    margin: 10px 0;
+    letter-spacing: 3px;
+}
+
+.flip-card-back {
+    color: var(--text-color-2);
+    transform: rotateY(180deg);
+    padding: 30px 0 0 0;
+    margin-bottom: 20px;
+}
+
+.flip-card-back h3 {
+    margin-top: 30px;
+}
+
+.flip-card-back p {
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flip-card-back .job-desc {
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+.flip-card-back hr {
+    margin: 0px 20px;
+}
+
+.flip-card-back .figures {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.figures .follower .number,
+.figures .following .number,
+.figures .projects .number {
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin: 25px 0;
+}
+
+.figures .following {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* api */
+.api_container {
+    width: 100%;
+    height: 400px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.api_container img, .api_container video {
+    width: 400px;
+    height: 250px;
+}
+
+@media screen and (max-width: 500px) {
+    .api_container img, .api_container video {
+        width: 250px;
+        height: 150px;
+    }
+}

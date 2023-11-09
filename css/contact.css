@@ -1,0 +1,58 @@
+.contact_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+#reviewForm {
+    width: 450px;
+    padding: 15px 40px;
+    background-color: var(--bg-color);
+    color: var(--text-color-2);
+}
+
+.reviewFormLabel {
+    font-size: var(--h4-font-size);
+    font-weight: var(--bold-weight);
+    text-transform: uppercase;
+    display: flex;
+}
+
+.reviewFormLabel img {
+    align-self: self-start;
+}
+
+.reviewFormInputDiv {
+    margin-top: 20px;
+}
+
+.reviewFormInput {
+    width: 100%;
+    padding: 8px 5px;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.reviewFormInput:focus {
+    outline: none;
+}
+
+.reviewFormFileInput {
+    border: none;
+}
+
+.reviewSubmitDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reviewSubmitBtn {
+    padding: 15px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 15px;
+    color: var(--text-color-2);
+    background-color: var(--primary-color);
+}
